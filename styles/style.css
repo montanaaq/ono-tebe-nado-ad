@@ -37,7 +37,12 @@ body {
 
 .header__logo {
   display: block;
-  width: 148px;
+  width: 134px;
+  height: 105px;
+}
+
+.header__logo-image {
+  height: 100%;
 }
 
 .header__logo-image,
@@ -82,28 +87,30 @@ body {
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-size: 100px;
   font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 30%;
+  line-height: 115px;
+  letter-spacing: 30px;
   text-transform: uppercase;
 }
 
-.cover__title h1 {
-  display: flex;
-  font: inherit;
+.cover__title-line {
+  display: block;
 }
 
-.cover__title h1:nth-child(1) {
-  justify-content: start;
+.cover__title-line > span {
+  letter-spacing: 0;
 }
 
-.cover__title h1:nth-child(2) {
-  justify-content: center;
+.cover__title-line:nth-child(2) {
+  text-align: center;
 }
 
-.cover__title h1:nth-child(3) {
-  justify-content: end;
+.cover__title-line:nth-child(3) {
+  text-align: right;
 }
 
 .cover__description {
@@ -111,7 +118,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-top: 135px;
+  margin-top: 106px;
 }
 
 .cover__description-text {
@@ -240,6 +247,7 @@ body {
   gap: 24px;
   font-size: 20px;
   line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 .footer {
